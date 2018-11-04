@@ -39,7 +39,7 @@ cacheSolve <- function(x, ...) {
     return(i)
   }
   
-  # if there is no cached inverse
+  # if there's no cached inverse
   data <- x$get()
   i <- solve(data, ...)
   x$set_inverse(i)
